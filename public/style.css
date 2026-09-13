@@ -1,0 +1,177 @@
+:root{--blue:#153c85;--red:#c63729;--paper:#fffaf0;--green:#184b3e;--angle:0deg}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e4ebe3;color:var(--blue);font-family:'Songti TC','Noto Serif TC','STSong',serif}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid var(--red);outline-offset:5px}button{border:0;background:none}#journey{height:340vh}.scene{height:100svh;min-height:720px;position:sticky;top:0;overflow:hidden;background:#e5ece5}header{position:absolute;top:0;left:0;right:0;height:100px;z-index:6;display:flex;align-items:center;justify-content:space-between;padding:0 4.5%;border-bottom:1px solid #184b3e22}.brand{color:var(--green);text-decoration:none;display:flex;gap:12px;align-items:center;font-size:25px;font-weight:bold;letter-spacing:3px}.brand small{display:block;font:9px Georgia;letter-spacing:1.9px;margin-top:5px}.brand-seal{border:1.5px solid;border-radius:50%;font-size:16px;line-height:1.2;padding:7px 10px;transform:rotate(-8deg)}.header-note{font-size:12px;letter-spacing:3px;color:var(--green)}.sound{font-size:12px;color:var(--green);border-bottom:1px solid;padding:6px 0}.intro{position:absolute;top:125px;left:5.5%;z-index:4}.eyebrow{font-size:11px;letter-spacing:3px}.intro h1{font-size:38px;margin:9px 0 0;font-weight:500;letter-spacing:2px}.intro em{font-style:normal;color:var(--red)}.order{position:absolute;z-index:5;left:6%;top:233px;width:365px;padding:22px 22px 17px;background:var(--paper);box-shadow:3px 9px 24px #32402c19;transform:rotate(-2deg);border:1px solid #d8d8c9;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.035' filter='url(%23n)'/%3E%3C/svg%3E")}.paper-top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:2px;margin-bottom:10px}.meta{border:1px solid;display:flex}.meta span{flex:1;padding:6px;font-size:10px;border-right:1px solid}.meta span:last-child{border:0}.meta b{font-size:12px;font-weight:400;margin-left:6px}.order h2{text-align:center;font-size:29px;letter-spacing:4px;margin:15px 0 2px}.english{text-align:center;font:bold 10px Georgia;letter-spacing:2.3px;margin:0 0 12px}.double-rule{border-top:3px solid;border-bottom:1px solid;height:7px}.menu-head{display:flex;justify-content:space-between;font-size:8px;letter-spacing:.5px;padding:11px 0 7px}.row{display:flex;align-items:stretch;border:1px solid;border-bottom:0;min-height:68px;position:relative}.row:last-child{border-bottom:1px solid}.browse{display:flex;align-items:center;text-align:left;gap:12px;flex:1;padding:10px 9px;position:relative}.browse .letter{font:12px Georgia;opacity:.7}.browse strong{font-size:17px;display:block;letter-spacing:1px}.browse small{font-size:9px;display:block;margin-top:4px;letter-spacing:1px}.row.active{background:#153c8509}.row.active .letter{color:var(--red);opacity:1}.row.active .letter:after{content:'▸';position:absolute;left:-15px;top:26px}.stamp-zone{border-left:1px solid var(--blue);width:64px;flex-shrink:0;position:relative;display:grid;place-items:center}.stamp-zone:before{content:'點';opacity:.22;font-size:15px}.stamp-zone.selected:before{display:none}.imprint{border:2px solid var(--red);border-radius:49% 46% 51% 48%;width:44px;height:44px;display:grid;place-items:center;font:bold 29px Georgia;color:var(--red);transform:rotate(-14deg);opacity:.85;text-shadow:1px 0 #c6372988;mask-image:repeating-linear-gradient(12deg,#000 0 3px,#0009 3px 4px)}.selected .imprint{animation:stamp .23s ease-out}.paper-message{display:flex;align-items:center;justify-content:space-between;margin:12px 0;gap:10px}.paper-message p{font-size:12px;margin:0;line-height:1.7;flex:1}.paper-message small{font-size:9px;opacity:.7}.tiny-star{font-size:29px}.paper-message #count{font-size:13px;white-space:nowrap}#save{background:var(--blue);color:var(--paper);width:100%;padding:11px 13px;text-align:left;font-size:12px;letter-spacing:2px}#save span{float:right}#save:disabled{opacity:.4;cursor:default}.receipt-foot{display:flex;justify-content:space-between;font-size:8px;margin-top:12px;letter-spacing:1px}.table-area{position:absolute;inset:0;pointer-events:none}.table{position:absolute;width:1050px;height:1050px;left:calc(64% - 60px);top:50%;margin-top:-455px;border:13px solid #af382d;border-radius:50%;background:#f4ecd9;box-shadow:0 0 0 3px #79251e,0 16px 30px #29432e24,inset 0 0 0 3px #fff4db}.inner-ring{position:absolute;inset:30px;border:1px solid #bdac89;border-radius:50%}.rotor{position:absolute;inset:0;transform:rotate(var(--angle));will-change:transform}.dish{width:405px;height:405px;position:absolute;left:50%;top:50%;margin:-202.5px;transform:rotate(calc(var(--i)*120deg)) translateX(-310px);border-radius:50%;filter:drop-shadow(4px 12px 8px #36260925)}.dish img{width:100%;height:100%;object-fit:cover;border-radius:50%;clip-path:circle(45%)}.table-mark{position:absolute;left:57%;top:44%;text-align:center;font-size:39px;letter-spacing:8px;color:#b09f7f;line-height:1.4}.table-mark small{display:block;font:8px Georgia;letter-spacing:2px}.dish-copy{position:absolute;z-index:3;left:44%;top:160px;max-width:390px;pointer-events:none}.dish-kicker{font:11px Georgia;letter-spacing:2px;display:flex;align-items:center;gap:10px;color:var(--green)}.dish-kicker #dish-number{font-size:21px}.dish-kicker i{display:block;width:35px;height:1px;background:var(--green);margin:0 5px}.dish-copy h2{font-size:43px;font-weight:500;letter-spacing:3px;margin:16px 0;color:var(--green)}.dish-copy p{font-size:13px;line-height:1.9;letter-spacing:1px;margin:0;color:var(--green)}#recipe{pointer-events:auto;margin-top:20px;border-bottom:1px solid var(--green);padding:0 0 7px;color:var(--green);font-size:12px;letter-spacing:2px}#recipe span{margin-left:26px}.controls{position:absolute;z-index:4;left:47%;bottom:102px;display:flex;gap:15px;align-items:center}.controls>button{border:1px solid #184b3e66;width:36px;height:36px;border-radius:50%;color:var(--green)}.controls button:disabled{opacity:.25}.controls #dots{display:flex;gap:12px}.dot{width:20px;height:25px;font:11px Georgia;padding:0;border-bottom:1px solid transparent}.dot.active{color:var(--red);border-color:var(--red)}footer{position:absolute;z-index:5;left:4.5%;right:4.5%;bottom:48px;display:flex;justify-content:space-between;font-size:11px;letter-spacing:2px;color:var(--green)}.tile-strip{position:absolute;bottom:0;width:100%;height:25px;border-top:3px solid #184b3e;background:conic-gradient(#184b3e 25%,#faf8ed 0 50%,#184b3e 0 75%,#faf8ed 0);background-size:44px 44px}.cursor{position:fixed;z-index:100;pointer-events:none;width:45px;height:45px;border:2px solid var(--red);border-radius:50%;color:var(--red);font:bold 28px Georgia;display:none;align-items:center;justify-content:center;transform:translate(-50%,-50%) rotate(-12deg);background:#c6372909}.cursor.pressed{scale:.85}.toast{position:fixed;bottom:50px;left:50%;transform:translateX(-50%) translateY(10px);z-index:30;background:var(--blue);color:var(--paper);padding:10px 22px;font-size:13px;opacity:0;pointer-events:none;transition:.2s}.toast.visible{opacity:1;transform:translateX(-50%)}.end{min-height:160px;display:flex;align-items:center;justify-content:center;gap:40px;font-size:23px;background:var(--paper)}.end button{font-size:13px;border-bottom:1px solid;padding:10px}dialog{max-width:480px;width:90%;padding:38px;background:var(--paper);border:1px solid var(--blue);color:var(--blue);box-shadow:6px 10px 0 #153c8522}dialog::backdrop{background:#112c3166;backdrop-filter:blur(4px)}.close{position:absolute;right:14px;top:10px;font-size:28px}dialog h2{font-size:28px}dialog p,dialog li{font-size:14px;line-height:1.9}dialog ol{padding-left:22px}dialog li{margin-bottom:12px}.recipe-tip{border-top:1px solid;padding-top:15px;font-size:12px!important}@keyframes stamp{from{transform:rotate(-14deg) scale(1.5);opacity:.1}to{transform:rotate(-14deg) scale(1);opacity:.85}}@media(hover:hover){.stamp-zone{cursor:none}.browse:hover strong{color:var(--red)}}@media(min-width:1500px){.order{left:9%;width:390px}.intro{left:8.5%}.table{left:60%}.dish-copy{left:44%}}@media(max-height:800px) and (min-width:801px){header{height:78px}.intro{top:97px}.intro h1{font-size:30px}.order{top:182px;scale:.91;transform-origin:top left}.dish-copy{top:118px}.dish-copy h2{font-size:36px}.controls{bottom:87px}}@media(max-width:800px){#journey{height:310vh}.scene{min-height:800px;height:100svh}header{height:70px;padding:0 22px}.brand{font-size:19px}.brand small{font-size:7px}.brand-seal{font-size:12px}.header-note{display:none}.sound{font-size:10px}.intro{top:92px;left:24px}.intro .eyebrow{font-size:9px}.intro h1{font-size:27px;letter-spacing:0}.order{left:25px;top:183px;width:calc(100% - 50px);max-width:390px;padding:15px;transform:rotate(-1deg)}.order h2{font-size:22px;margin:8px 0 0}.english{font-size:8px;margin-bottom:7px}.paper-top{font-size:9px;margin-bottom:7px}.meta{display:none}.menu-head{padding:8px 0 5px}.row{min-height:48px}.browse{padding:6px 10px}.browse strong{font-size:14px}.browse small{font-size:8px;margin-top:2px}.stamp-zone{width:53px}.imprint{width:35px;height:35px;font-size:23px}.row.active .letter:after{top:16px}.paper-message{margin:9px 0}.paper-message p{font-size:10px;line-height:1.4}.paper-message small{font-size:8px}.paper-message #count{font-size:11px}.tiny-star{font-size:22px}.receipt-foot{display:none}#save{padding:8px;font-size:10px}.table{width:700px;height:700px;left:38%;top:690px;margin-top:0;border-width:9px}.dish{width:310px;height:310px;margin:-155px;transform:rotate(calc(var(--i)*120deg)) translateX(-207px)}.table-area{transform:translateY(-130px)}.dish-copy{left:27px;top:540px;max-width:260px}.dish-copy h2{font-size:26px;margin:9px 0}.dish-copy p{font-size:10px;line-height:1.5}.dish-kicker{font-size:9px}.dish-kicker #dish-number{font-size:15px}#recipe{margin-top:9px;font-size:10px;padding-bottom:4px}.controls{left:25px;bottom:59px;gap:8px}.controls>button{width:29px;height:29px}footer{bottom:30px;left:25px;font-size:8px}.footer-right{display:none}.tile-strip{height:15px}.end{font-size:16px;gap:20px}.table-mark{font-size:25px}.table .inner-ring{inset:18px}.cursor{display:none!important}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+@media(max-width:800px){.table{top:520px}}
+
+/* Original supplied tea-room ticket, with interactive ink over its empty cells. */
+.original-order{top:220px;left:10%;height:calc(100svh - 325px);min-height:360px;max-height:530px;width:auto;aspect-ratio:937/1678;padding:0;border:0;background:none;scale:1;transform:rotate(-2deg);transform-origin:center}
+.original-card{display:block;width:100%;height:100%;object-fit:fill}
+.original-order #menu{position:absolute;left:18.6%;right:5%;top:30.7%;height:39.75%}
+.original-order .row{height:33.333%;min-height:0;border:0;background:transparent}
+.original-order .row.active{background:#153c8508}
+.original-order .browse{padding:5px 5px;gap:5px;align-items:flex-start;padding-top:9px}
+.original-order .browse strong{font-size:clamp(10px,1.05vw,15px);letter-spacing:0}
+.original-order .browse small{font-size:7px;letter-spacing:0;margin-top:7px}
+.original-order .browse .letter{font-size:8px;margin-top:3px}
+.original-order .row.active .letter:after{left:-10px;top:10px}
+.original-order .stamp-zone{border:0;width:39px;align-items:start;padding-top:8px}
+.original-order .stamp-zone:before{font-size:10px;margin-top:4px}
+.original-order .imprint{width:29px;height:29px;font-size:20px}
+.order-actions{position:absolute;left:0;right:0;top:calc(100% + 10px);transform:rotate(2deg)}
+.order-actions p{display:flex;justify-content:space-between;font-size:10px;margin:0 0 8px}
+.order-actions #save{padding:10px;font-size:10px;letter-spacing:1px}
+.dish{width:360px;height:360px;margin:-180px}.dish img{clip-path:circle(46%)}
+@media(max-height:800px) and (min-width:801px){.original-order{top:190px;height:calc(100svh - 300px)}}
+@media(max-width:800px){.original-order{top:170px;left:30px;height:350px;min-height:0;width:auto;max-width:none}.original-order .browse strong{font-size:10px}.original-order .browse small{font-size:6px}.original-order .stamp-zone{width:28px}.original-order .imprint{width:23px;height:23px;font-size:16px}.original-order .browse{gap:3px;padding:6px 3px}.order-actions{top:calc(100% + 7px)}.order-actions p{font-size:8px}.order-actions #save{font-size:9px;padding:7px}.dish-copy{top:598px}.dish-copy h2{font-size:23px}.dish-copy p{max-width:180px}.dish{width:260px;height:260px;margin:-130px}.table{top:590px}.controls{left:auto;right:20px;bottom:53px}.scene{min-height:850px}}
+@media(min-width:801px){.original-order{top:205px;height:calc(100svh - 360px);max-height:490px}.original-order .stamp-zone{width:44px}}
+.original-order .stamp-zone:before{color:var(--red);opacity:.65;border:1px dashed #c6372980;border-radius:50%;width:24px;height:24px;display:grid;place-items:center;margin-top:0}
+@media(max-width:800px){.original-order .stamp-zone{width:44px}}
+.original-order .stamp-zone.selected:before{display:none}
+.dish:first-child img{transform:scale(.9);clip-path:circle(46%)}
+/* Banquet linen, transparent glass and freshly taped menu. */
+.scene{background:#f4f1e9 url('assets/tablecloth.png') center/cover}
+.table{border:5px solid #e9f7efb3;background:linear-gradient(125deg,#ffffff30 10%,#deede516 45%,#aac7bb22 80%);box-shadow:0 0 0 1px #6e94858a,0 0 0 3px #dce8ddaa,8px 15px 24px #455c4221,inset 2px 2px 4px #fff,inset -3px -3px 7px #47766b40;backdrop-filter:blur(.6px)}
+.table:after{content:'';position:absolute;inset:5px;border-radius:50%;pointer-events:none;background:linear-gradient(125deg,transparent 15%,#ffffff1c 25%,#ffffff05 33%,transparent 47%,#ffffff1c 78%,transparent 85%);border:1px solid #ffffff70}
+.inner-ring{border-color:#769c872e;inset:15px}.table-mark{display:none}.tile-strip{display:none}footer{bottom:25px}.end{background:#f5f2e9}
+#stamp-paper{position:absolute;inset:0;width:100%;height:100%;padding:0;display:block;overflow:hidden;touch-action:pan-y;border:0;border-radius:0}
+#free-stamps{position:absolute;inset:0;pointer-events:none}.free-imprint{position:absolute;pointer-events:none;display:grid;place-items:center;width:36px;height:36px;border:2px solid #c33329;border-radius:48% 50% 46% 49%;font:bold 25px Georgia;color:#c33329;opacity:.8;transform:translate(-50%,-50%) rotate(var(--tilt));mask-image:repeating-linear-gradient(14deg,#000 0 3px,#0008 3px 4px);animation:free-stamp .2s ease-out}
+@keyframes free-stamp{from{scale:1.35;opacity:.1}to{scale:1;opacity:.8}}
+.stamp-help{position:absolute;top:100%;left:0;right:0;text-align:center;font-size:9px;letter-spacing:1px;margin-top:14px;color:#153c85b0}
+@media(hover:hover){#stamp-paper{cursor:none}}
+.dish-copy{left:44%;top:190px;width:160px;max-width:none;pointer-events:auto;transform:rotate(2deg)}
+.menu-strip{position:relative;background:#fffaf0;border:2px solid #ad3d32;box-shadow:3px 6px 9px #47332122;min-height:382px;text-align:center;padding-bottom:12px}
+.menu-tape{position:absolute;top:-14px;left:39px;width:74px;height:27px;background:#e7d9b7a6;transform:rotate(-5deg);box-shadow:0 1px 1px #c4b79730;z-index:1}
+.strip-header{background:#b13c30;color:#fff7e8;padding:17px 4px 10px;font-family:'Kaiti TC','STKaiti','KaiTi',serif;font-size:23px;letter-spacing:3px}
+.dish-copy .dish-kicker{display:block;margin:11px 0 0;font-size:9px;letter-spacing:2px;color:#78493f}.dish-copy .dish-kicker #dish-number{font-size:11px}
+.dish-copy h2{writing-mode:vertical-rl;text-orientation:upright;margin:13px auto 19px;font-family:'Kaiti TC','STKaiti','KaiTi',serif;font-size:35px;font-weight:600;line-height:1.3;letter-spacing:3px;color:#242824;min-height:225px}
+.dish-copy #recipe{font-size:10px;letter-spacing:1px;border-color:#b13c3066;color:#873b31;margin:0;padding-bottom:5px}
+@media(min-width:1500px){.dish-copy{left:44%}}
+@media(max-height:800px) and (min-width:801px){.dish-copy{top:174px}.dish-copy h2{font-size:31px;min-height:202px}.menu-strip{min-height:350px}}
+@media(max-width:800px){.original-order{left:25px;top:178px;height:350px}.dish-copy{left:auto;right:21px;top:197px;width:112px}.strip-header{font-size:17px;letter-spacing:1px;padding-top:14px}.menu-tape{left:25px;width:58px;height:22px}.dish-copy h2{font-size:26px;letter-spacing:2px;min-height:180px;margin:12px auto}.menu-strip{min-height:300px}.dish-copy .dish-kicker{margin-top:8px}.table{top:510px}.controls{left:25px;right:auto;bottom:60px}.stamp-help{font-size:8px;letter-spacing:0}.scene{min-height:800px}.free-imprint{width:29px;height:29px;font-size:20px}.dish{width:285px;height:285px;margin:-142.5px}}
+/* Quieter tabletop: plain pressed linen and a smaller paper ticket. */
+.intro,.dish-copy,.controls{display:none}
+.scene{background-color:#f2eee5;background-image:repeating-linear-gradient(0deg,#9b90700a 0,#9b90700a 1px,transparent 1px,transparent 3px),repeating-linear-gradient(90deg,#ffffff50 0,#ffffff50 1px,transparent 1px,transparent 3px);background-size:3px 3px}
+.original-order{top:50%;left:15%;height:390px;min-height:0;max-height:none;transform:translateY(-43%) rotate(-4deg);background:#fffdf5;box-shadow:1px 1px 1px #97856b44,4px 6px 10px #77644924,11px 18px 23px #7764490d;border-radius:1px 2px 3px 1px}
+.original-card{mix-blend-mode:multiply;filter:contrast(.95) sepia(.06)}
+.original-order:after{content:'';position:absolute;inset:0;pointer-events:none;z-index:3;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.08' filter='url(%23paper)'/%3E%3C/svg%3E"),linear-gradient(100deg,#d6c9ac0d,transparent 12%,transparent 94%,#b9a98b18);box-shadow:inset -1px 0 1px #cfc5b570,inset 1px 0 #fff}
+.free-imprint{width:30px;height:30px;font-size:21px}
+@media(max-width:800px){.original-order{top:155px;left:35px;height:290px;transform:rotate(-4deg)}.table{top:480px}.free-imprint{width:25px;height:25px;font-size:17px}}
+/* Larger food-led composition with a clean white paper ticket. */
+header{display:none}
+.original-order{background:#fff;box-shadow:0 1px 2px #39362f19,2px 4px 7px #39362f12,5px 9px 17px #39362f08}
+.original-card{mix-blend-mode:normal;filter:none}
+.original-order:after{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.035' filter='url(%23p)'/%3E%3C/svg%3E");box-shadow:inset 0 -1px 1px #7777770c}
+@media(min-width:801px){.table{width:1200px;height:1200px;left:49%;top:50%;margin-top:-600px}.dish{width:560px;height:560px;margin:-280px;transform:rotate(calc(var(--i)*120deg)) translateX(-335px)}.dish:first-child img{transform:scale(.98)}}
+@media(min-width:1600px){.table{width:1400px;height:1400px;margin-top:-700px}.dish{width:650px;height:650px;margin:-325px;transform:rotate(calc(var(--i)*120deg)) translateX(-395px)}}
+@media(max-width:800px){.original-order{top:80px}.table{width:840px;height:840px;left:15%;top:485px;margin-top:0}.dish{width:390px;height:390px;margin:-195px;transform:rotate(calc(var(--i)*120deg)) translateX(-260px)}.dish:first-child img{transform:scale(.98)}}
+/* One diner’s place setting stays on the cloth; the teapot rides the glass. */
+.place-setting{position:absolute;left:34%;top:50%;width:190px;height:220px;transform:translateY(-32%);z-index:2;pointer-events:none}
+.bowl-piece{position:absolute;width:180px;height:190px;left:0;top:0;filter:drop-shadow(1px 3px 2px #35312816)}
+.bowl-piece img{position:absolute;width:320px;height:auto;left:-61px;top:-137px;clip-path:url(#bowl-cut)}
+.cup-piece{position:absolute;width:100px;height:100px;left:-4px;top:-145px;filter:drop-shadow(1px 3px 2px #35312812)}
+.cup-piece img{position:absolute;width:270px;height:auto;left:-47px;top:-177px;clip-path:url(#cup-cut)}
+.sticks-piece{position:absolute;width:240px;height:34px;left:-15px;top:197px;transform:rotate(-8deg);filter:drop-shadow(1px 2px 1px #35312819)}
+.sticks-piece img{position:absolute;width:290px;height:auto;left:-115px;top:-176px;clip-path:url(#sticks-cut);transform:rotate(-90deg);transform-origin:81% 50%}
+.pot-piece{position:absolute;width:160px;height:170px;left:50%;top:50%;transform:translate(-50%,-50%);filter:drop-shadow(2px 4px 3px #3531281a)}
+.pot-piece img{position:absolute;width:305px;height:auto;left:-113px;top:-88px;clip-path:url(#pot-cut)}
+@media(min-width:801px){.table{left:calc(92vw - 600px)}}
+@media(min-width:1600px){.table{left:calc(92vw - 700px)}.place-setting{left:34%;scale:1.12}.pot-piece{scale:1.12}}
+@media(max-width:800px){.place-setting{left:56%;top:215px;transform:none;scale:.66;transform-origin:top left}.cup-piece{top:-120px;left:20px}.sticks-piece{top:190px;left:-30px;transform:rotate(15deg)}.pot-piece{scale:.8}}
+.sticks-piece{transform:rotate(-8deg) scaleX(-1)}
+@media(min-width:801px){.pot-piece{scale:1.1}}
+@media(max-width:800px){.sticks-piece{transform:rotate(15deg) scaleX(-1)}}
+.stamp-help{display:none}
+@media(min-width:801px){.original-order{left:7%}.place-setting{left:31%;scale:1.3;transform:translateY(-32%);transform-origin:top left}.table{left:calc(99vw - 600px)}.pot-piece{scale:1.7;left:49%;top:50%}.dish{transform:rotate(calc(var(--i)*120deg)) translateX(-395px)}}
+@media(min-width:1600px){.table{left:calc(99vw - 700px)}.dish{transform:rotate(calc(var(--i)*120deg)) translateX(-455px)}}
+.original-order{--card-x:0px;--card-y:0px;--card-angle:-4deg;transform:translate(var(--card-x),calc(-43% + var(--card-y))) rotate(var(--card-angle))}
+#stamp-paper{touch-action:none}.original-order.moving #stamp-paper{cursor:grabbing}
+.rotate-card{position:absolute;right:-18px;bottom:-18px;width:36px;height:36px;z-index:6;border:1px solid #153c8530;border-radius:50%;background:#ffffffc9;color:#153c85;cursor:grab;opacity:0;transition:opacity .15s;touch-action:none;font-size:21px}
+.original-order:hover .rotate-card,.original-order:focus-within .rotate-card{opacity:1}
+@media(max-width:800px){.original-order{left:24px;transform:translate(var(--card-x),var(--card-y)) rotate(var(--card-angle))}.place-setting{left:56%;scale:.8}.pot-piece{scale:1.15}.rotate-card{opacity:.65}}
+@media(min-width:801px) and (max-width:1599px){.table{left:calc(94vw - 600px)}.place-setting{left:26%}.dish{width:520px;height:520px;margin:-260px}.pot-piece{left:47%;scale:1.55}}
+
+/* Keep the shared teapot visible in the open space between serving dishes. */
+@media(min-width:801px){.pot-piece{left:32%;top:31%;scale:1.55;z-index:2}.sticks-piece{width:230px;left:-5px;top:215px;scale:.92}}
+
+/* Contain every serving plate within the glass, including during rotation. */
+@media(min-width:801px){.dish{transform:rotate(calc(var(--i)*120deg)) translateX(-335px)}}
+@media(min-width:1600px){.dish{transform:rotate(calc(var(--i)*120deg)) translateX(-370px)}}
+@media(max-width:800px){.dish{transform:rotate(calc(var(--i)*120deg)) translateX(-220px)}}
+.pot-piece{left:50%;top:50%;scale:1;transform:translate(-50%,-50%) rotate(-120deg) translateX(440px);z-index:2}
+.pot-object{position:absolute;inset:0;scale:1.55}
+@media(min-width:1600px){.pot-piece{transform:translate(-50%,-50%) rotate(-120deg) translateX(510px)}}
+@media(max-width:800px){.pot-piece{transform:translate(-50%,-50%) rotate(-120deg) translateX(315px)}.pot-object{scale:1}}
+.bowl-piece{filter:drop-shadow(1px 2px 1px #38312730) drop-shadow(4px 9px 6px #51473724)}
+.cup-piece{filter:drop-shadow(1px 2px 1px #38312730) drop-shadow(3px 6px 4px #51473726)}
+.sticks-piece{filter:drop-shadow(1px 2px 1px #3831274a) drop-shadow(2px 4px 2px #51473722)}
+.original-card{pointer-events:none;user-select:none;-webkit-user-drag:none}
+.original-order{user-select:none;-webkit-user-select:none}
+.move-card{position:absolute;left:-18px;top:-18px;width:36px;height:36px;z-index:6;border:1px solid #153c8530;border-radius:50%;background:#ffffffdf;color:#153c85;cursor:grab;opacity:0;touch-action:none;font-size:22px}
+.original-order:hover .move-card,.original-order:focus-within .move-card{opacity:1}
+.original-order.moving .move-card{cursor:grabbing}
+@media(max-width:800px){.move-card{opacity:.65}}
+/* Individual objects can be picked up; their collision footprints stay solid. */
+.place-setting{pointer-events:none}
+.bowl-piece,.cup-piece,.sticks-piece{pointer-events:auto;touch-action:none;cursor:grab;translate:var(--item-x,0px) var(--item-y,0px)}
+.place-setting img{pointer-events:none;user-select:none;-webkit-user-drag:none}
+.place-setting .dragging{cursor:grabbing}
+.pot-object img{width:200px;height:200px;left:-20px;top:-15px;object-fit:contain;clip-path:none;pointer-events:none}
+.pot-piece{pointer-events:auto;touch-action:none;cursor:grab}
+
+/* Printed name and quiet stamping: only the new imprint animates. */
+.original-order{container-type:inline-size}
+.card-name{position:absolute;left:18%;top:15.25%;width:64%;height:5.45%;display:flex;align-items:center;justify-content:center;background:white;color:#050b91;font-family:'Kaiti TC','STKaiti','KaiTi',serif;font-size:7.2cqw;font-weight:600;letter-spacing:.16em;white-space:nowrap;pointer-events:none;z-index:1}
+#stamp-paper{z-index:2}
+#stamp-paper:focus,#stamp-paper:focus-visible{outline:none}
+.free-imprint{animation:none}
+.free-imprint.stamp-new{animation:free-stamp .2s ease-out}
+/* Keep selected chopsticks visually part of the tabletop. */
+.sticks-piece:focus,.sticks-piece:focus-visible{outline:none}
+.bowl-piece:focus,.bowl-piece:focus-visible,
+.cup-piece:focus,.cup-piece:focus-visible,
+.pot-piece:focus,.pot-piece:focus-visible{outline:none}
+
+/* Scroll-controlled product introduction above the existing dining table. */
+#can-intro{height:320svh;position:relative;background:#fff}
+.can-stage{position:sticky;top:0;height:100svh;min-height:400px;display:grid;place-items:center;overflow:hidden;background:#fff url('assets/home-tiles.png') center/cover no-repeat}
+#can-canvas{display:block;width:min(82vw,1100px);height:auto;filter:drop-shadow(0 18px 15px #152d272b);transform:translateY(-14%)}
+.can-scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);margin:0;padding:8px 15px;background:#ffffffdc;color:#174e36;font-size:12px;letter-spacing:3px}
+@media(max-width:800px){#can-intro{height:260svh}#can-canvas{width:96vw}.can-scroll-hint{font-size:10px;letter-spacing:2px;white-space:nowrap}}
+
+.can-stage{background:#fff}
+#can-video{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+@media(max-aspect-ratio:1/1){#can-video{object-fit:contain}.can-stage{background:#f9f9f5}}
+
+/* All tabletop objects share one coordinate system and one responsive scale. */
+.scene{min-height:0;height:100svh}
+.dining-layout{position:absolute;left:50%;top:50%;width:1312px;height:850px;transform:translate(-50%,-50%) scale(var(--dining-scale,1));transform-origin:center}
+.dining-layout .table-area{transform:none}
+.dining-layout .table{width:1200px;height:1200px;left:630px;top:425px;margin-top:-600px}
+.dining-layout .dish{width:520px;height:520px;margin:-260px;transform:rotate(calc(var(--i)*120deg)) translateX(-335px)}
+.dining-layout .original-order{left:90px;top:425px;height:390px;width:auto;scale:1;transform:translate(var(--card-x),calc(-43% + var(--card-y))) rotate(var(--card-angle))}
+.dining-layout .place-setting{left:345px;top:425px;scale:1.3;transform:translateY(-32%);transform-origin:top left}
+.dining-layout .cup-piece{left:-4px;top:-145px}
+.dining-layout .sticks-piece{width:230px;left:-5px;top:215px;scale:.92;transform:rotate(-8deg) scaleX(-1)}
+.dining-layout .pot-piece{left:50%;top:50%;scale:1}
+.dining-layout .pot-object{scale:1.55}
+.dining-layout.portrait{width:800px;height:1300px}
+.dining-layout.portrait .table{width:840px;height:840px;left:40px;top:520px;margin:0}
+.dining-layout.portrait .dish{width:390px;height:390px;margin:-195px;transform:rotate(calc(var(--i)*120deg)) translateX(-220px)}
+.dining-layout.portrait .original-order{left:85px;top:90px;height:320px;transform:translate(var(--card-x),var(--card-y)) rotate(var(--card-angle))}
+.dining-layout.portrait .place-setting{left:420px;top:255px;scale:.9;transform:none}
+.dining-layout.portrait .pot-object{scale:1}
+
+/* Three physical folds open between the film and the dining table. */
+#recipe-brochure{height:250svh;background:#e2e2dd;position:relative}
+.brochure-stage{position:sticky;top:0;height:100svh;overflow:hidden;display:grid;place-items:center;perspective:1800px}
+.brochure-fit{width:1200px;height:600px;flex:none;transform:scale(var(--brochure-scale,1));transform-origin:center}
+.brochure-sheet{position:relative;width:100%;height:100%;transform-style:preserve-3d;transform:rotate(-1deg);filter:drop-shadow(0 12px 15px #33332918)}
+.brochure-panel{position:absolute;top:0;width:400px;height:600px;background:#fffefa;transform-style:preserve-3d}
+.brochure-panel iframe{display:block;border:0;width:100%;height:100%;pointer-events:none}
+.brochure-left{left:0;transform-origin:right center;transform:rotateY(calc(-1 * var(--fold,88deg)))}
+.brochure-middle{left:400px}
+.brochure-right{left:800px;transform-origin:left center;transform:rotateY(var(--fold,88deg))}
+.brochure-panel:after{content:'';position:absolute;inset:0;pointer-events:none}
+.brochure-left:after{background:linear-gradient(to left,#51473716,transparent 5%)}
+.brochure-middle:after{background:linear-gradient(to right,#5147370c,transparent 4%,transparent 96%,#51473710)}
+.brochure-right:after{background:linear-gradient(to right,#51473718,transparent 5%)}
+@media(max-width:600px){#recipe-brochure{height:210svh}}
+@media(prefers-reduced-motion:reduce){.brochure-left,.brochure-right{transform:none}}
